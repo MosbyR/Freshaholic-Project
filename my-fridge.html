@@ -7,7 +7,7 @@
     <meta name="description" content="Main page of the website">
     <meta name="keywords" comntent="food tracking,tracking system, reduce food waste,food spoilage">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Freshaholic Home Page</title>
+    <title>My Fridge</title>
 
         <!-- bootstrap css  -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -39,10 +39,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="">My Fridge <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="my-fridge.html">My Fridge</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="under-construction.html">Profile</a>
@@ -61,79 +61,46 @@
       </nav>
 
 
-
-      <!--Main page informatin-->
-      <div class="features-container">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                <br>
-                <br>
-                    <h1 class="subtitle">Welcome to <span style="color: #7fa8d3">Freshaholic</span>. Reduce your food waste!</h1>
-                    <p class="subtitle-text">Keeping track of your food has never been easier! </p>
-                
-                      <a href ="create-account.html"><button id="button-sub" type="button" class="btn btn-lg">Sign-Up</button></a>
-                      <a href ="log-in.html"><button id="button-sub" type="button" class="btn btn-lg">Log In</button></a>
-            
-                </div>
-                <div class="col-sm">
-                  <br>
-                    <img class="imgResponsive-features" src="./img/fridge2.png" alt="Charts">
-                </div>
-            </div>
-        </div>
-        </div>
-
-        <br>
-        <br>
-
-
-
- 
-
-<!-- 
-        <div class="row card-tips">
-          <div class="column">
-            <div class="card-main">
-              <img src ="./img/shopping.png" alt="fresh food" style="width:auto; height:150px; border-radius: 10%;">
-              <h3>Fresh Food</h3>
-              <p>Place holder text</p>
-
-            </div>
+      <div class ="container-fridge">
+          <div class ="header">
+              <div class="clear">
+                  <i class="fa fa-refresh"></i>
+              </div>
+              <div id="date"></div>
           </div>
-        
-          <div class="column">
-            <div class="card-main">
-              <img src ="./img/cash-payment.png" alt="money" style="width:auto; height:150px; border-radius: 10%;">
-              <h3>Save Money</h3>
-              <p>Place holder text</p>
-              
-            </div>
+
+          <div class ="content">
+              <ul id="list">
+                  <!-- <li class="item">
+                      <i class ="fa fa-circle-thin co" job="complete" id="0"></i>
+                      <p class ="text">Beans</p>
+                      <i class = "fa fa-trash-o de" job="delete" id ="0"></i>
+                  </li> -->
+                </ul>
           </div>
-          
-          <div class="column">
-            <div class="card-main">
-              <img src ="./img/online-marketing.png" alt="tracking" style="width:auto; height:150px; border-radius: 10%;">
-              <h3>Prevent Spoilage</h3>
-              <p>Place holder text</p>
-         
-            </div>
+
+              <div class="add-to-do">
+                  <i class= "fa fa-plus-circle" id="addList"></i>
+                  <input type="text" id="input" placeholder="Add Item">
+              </div>
           </div>
-          </div> -->
-
-
-
-     
+      
 
 
 
 
 
-      <!-- <div class=footer-page>
-      <footer>
+
+
+
+
+
+      <!-- <footer>
         <p style=text-align:center>Copyright © 2020 All rights reserved.</p>
-      </footer>
-      </div>   -->
+      </footer> -->
+
+        <!-- links javascript file-->
+  <script src= "js/myapp.js"></script>
 
 </body>
 
