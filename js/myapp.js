@@ -160,3 +160,46 @@ list.addEventListener("click", function(event){
 localStorage.setItem("TODO", JSON.stringify(LIST));
 });
 
+
+
+
+//  data for my-fridge autocomplete 
+const countries = [
+    {name: "LA"},
+    {name: "OH"},
+    {name: "NY"},
+    {name: "NJ"}
+];
+
+const searchInput = document.querySelector(".search-input");
+const suggestionsPanel = document.querySelector(".suggestions");
+
+searchInput.addEventListener('keyup',function() {
+    suggestionsPanel.classList.add('show');
+    const inputSearch = searchInput.value;
+
+    suggestionsPanel.innerHTML ='';
+    const suggestions = countries.filter(function(food){
+        return food.name.toLowerCase().startsWith(inputSearch);
+    });
+    suggestions.forEach(function(suggested){
+        const div = document.createElement('div');
+        div.innerHTML = suggested.name;
+        div.setAttribute('class','suggestion');
+        suggestionsPanel.appendChild(div);
+    });
+    if(inputSearch === ""){
+        suggestionsPanel.innerHTML = '';
+    }
+// cited by https://www.youtube.com/watch?v=MBJuTkILZYo
+})
+
+
+// function that selects a value from the autocomplete and places it in the text bo
+document.addEventListener('click',function(e){
+    if (e.target.className === 'suggestion'){
+        searchInput.value = e.target.innerHTML;
+        suggestionsPanel.classList.remove('show');
+    }
+});
+
