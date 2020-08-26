@@ -143,18 +143,34 @@ text-align: center;
   }
 }
 
+/* This is exclusive for the "tips.html page"       */ 
+
 /* Style the counter cards */
-.card-tip {
+.card-tip{
   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
   text-align: center;
   background-color: #eeeeee;
   border-radius: 10%;
-
+  transition: 0.5s ease;
+  cursor: pointer;
 
 }
 
+.column .card-tip:hover{
+  transform: scale(1,1.3);
+  /*box-shadow: 5px 5px 15px rgba(0,0,0,0.6); */
+}
+
+
+/* //////////////////////////////////////////////  */     
+
+
+
+
+
+
 /* style the main page cards! */
-.card-main {
+.card-main{
   border: none;
   text-align: center;
   background-color: #eeeeee;
