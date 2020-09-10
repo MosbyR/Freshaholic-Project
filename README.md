@@ -1,4 +1,4 @@
 # Freshaholic-Project
 
 
-link top website:  https://mosbyr.github.io/Freshaholic-Project/
+link to website:  https://mosbyr.github.io/Freshaholic-Project/
